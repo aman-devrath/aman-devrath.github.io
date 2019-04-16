@@ -3,6 +3,8 @@ color: #6dc234;
 background-color: #2ecc71;
 */
 
+/* ----------------------------------- header ----------------------------------- */
+
 body {
 	font-weight: 300;
 	color: #000;
@@ -86,7 +88,31 @@ header nav ul li a:hover::before {
 	width: 100%;
 }
 
-#green-container {
+header nav ul .icon {
+	display: none;
+}
+
+/*@media screen and (max-width: 577px) {
+	header {
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li a{
+		display: none;
+	}
+
+	header nav ul .icon {
+		float: right;
+		display: block;
+	}
+}/*
+
+
+
+/* ----------------------------------- index.html ----------------------------------- */
+
+#index-green-container {
 	background-color: #2ecc71;
 	color: white;
 	width: auto;
@@ -95,17 +121,17 @@ header nav ul li a:hover::before {
 	text-align: center;
 }
 
-#green-container #green-container-header {
+#index-green-container #index-green-container-header {
 	font-size: 50px;
 	font-family: Segoe UI;
 }
 
-#green-container #green-container-description {
-	font-size: 45px;
+#index-green-container #index-green-container-description {
+	font-size: 40px;
 	font-family: Segoe UI;
 }
 
-#green-container .read-more {
+#index-green-container .read-more {
 	font-size: 20px;
 	color: white;
 	background-color: #2ecc71;
@@ -115,14 +141,14 @@ header nav ul li a:hover::before {
 	transition: 0.3s;
 }
 
-#green-container .read-more span {
+#index-green-container .read-more span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
 }
 
-#green-container .read-more span::after{
+#index-green-container .read-more span::after{
 	content: '\00bb';
   	position: absolute;
   	opacity: 0;
@@ -131,13 +157,20 @@ header nav ul li a:hover::before {
   	transition: 0.5s;
 }
 
-#green-container .read-more:hover span {
+#index-green-container .read-more:hover span {
 	padding-right: 25px;
 }
 
-#green-container .read-more:hover span::after {
+#index-green-container .read-more:hover span::after {
 	opacity: 1;
 	right: 0;
+}
+
+#index-green-container #index-green-container-resume,
+#index-green-container #index-green-container-resume a {
+	color: white;
+	font-size: 35px;
+	font-family: Segoe UI;
 }
 
 /*.grid-container {
@@ -189,7 +222,7 @@ div.gallery img {
 }
 
 div.gallery img:hover {
-	opacity: 0.7;
+    transform: scale(1.1);
 }
 
 div.desc {
@@ -199,45 +232,389 @@ div.desc {
   	font-weight: 500;
 }
 
-/*footer {
-	width: 100%;
-	border: solid 1px black;
-	border-left-color: white;
-	border-right-color: white;
-	border-bottom-color: white;
-	margin-top: 20px;
-	padding: 20px 0 20px 0;
+@media only screen and (max-width: 1558px) {
+	#index-green-container #index-green-container-header {
+		font-size: 40px;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 38px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	#index-green-container #index-green-container-header {
+		font-size: 38px;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 34px;
+	}
+}
+
+@media only screen and (max-width: 1040px) {
+	#index-green-container #index-green-container-header {
+		font-size: 37px;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 33px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		width: 100%;
+		margin: 0;
+	}
+
+	header {
+		margin: 0;
+	}
+
+	header h1 {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	header nav {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	header nav ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	header nav ul li {
+		width: 20%;
+		margin-left: auto;
+		display: inline-block;
+		padding-top: 23px;
+	}
+
+	#index-green-container {
+		height: auto;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 816px) {
+	header nav ul li {
+		width: 10%;
+		display: inline-block;
+		padding-top: 23px;
+	}
+
+	#index-green-container #index-green-container-header {
+		font-size: 35px;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 777px) {
+	header nav {
+		padding: 0;
+		margin: 0;
+	}
+	#index-green-container #index-green-header {
+		font-size: 32px;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 28px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	header {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	header {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 616px) {
+	header {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	header h1 {
+		padding-top: 40px;
+	}
+
+	header nav ul li{
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	#index-green-container #index-green-container-header {
+		font-size: 29px;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	header {
+		padding-bottom: 0;
+	}
+
+	header nav ul li{
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	#index-green-container #index-green-header{
+		font-size: 26px;
+	}
+
+	#index-green-container #index-green-container-description {
+		font-size: 22px;
+	}
+
+	.gallery-container {
+		padding-top: 70px;
+		display: block;
+	}
+
+	.gallery-container .gallery{
+		width: 100%;
+	}
+}
+
+
+/* ----------------------------------- about.html ----------------------------------- */
+
+/*#about-green-container {
+	background-color: #2ecc71; 
+	color: white;
+	width: auto;
+	height: 500px;
+	padding: 25px;
 	text-align: center;
-	font-weight: 400;
+}
+
+#about-green-container #about-green-container-header {
+	font-size: 50px;
 	font-family: Segoe UI;
-	color: black;
+}
+
+#about-green-container #about-green-container-description {
+	font-size: 40px;
+	font-family: Segoe UI;
 }*/
 
 
-/* --------------- contact.html --------------- */
 
-#green-container #green-container-description .social {
+/* ----------------------------------- work.html ----------------------------------- */
+
+#websites-container,
+#ui_ux-container,
+#business_cards-container {
+	font-size: 30px;
+}
+
+
+
+/* ----------------------------------- contact.html ----------------------------------- */
+
+#contact-green-container {
+	background-color: #2ecc71;
+	color: white;
+	width: auto;
+	height: 500px;
+	padding: 25px;
+	text-align: center;
+}
+
+#contact-green-container #contact-green-container-header {
+	font-size: 50px;
+	font-family: Segoe UI;
+}
+
+#contact-green-container #contact-green-container-description {
+	font-size: 40px;
+	font-family: Segoe UI;
+}
+
+#contact-green-container #contact-green-container-description .social {
 	text-decoration: none;
 	color: black;
 	transition: 0.5s;
 }
 
-#green-container #green-container-description .social:hover {
+#contact-green-container #contact-green-container-description .social:hover {
 	color: white;
 }
 
-#email-container #email {
-	font-size: 35px;
-	text-align: center;
-	color: #2ecc71;
+@media only screen and (max-width: 1588px) {
+	body {
+		background-color: blue;
+	}
+
+	#contact-green-container {
+		padding-bottom: 50px;
+	}
+
+	#contact-green-container #contact-green-container-header {
+		font-size: 32px;
+	}
+
+	#contact-green-container #contact-green-container-description {
+		font-size: 37px;
+	}
 }
 
-#email-container #email .social {
-	text-decoration: none;
-	color: black;
-	transition: 0.5s;
+@media only screen and (max-width: 1252px) {
+	body {
+		background-color: green;
+	}
+
+	#contact-green-container {
+		padding-bottom: 5px;
+	}
+
+	#contact-green-container #contact-green-container-header {
+		font-size: 42px;
+	}
+
+	#contact-green-container #contact-green-container-description {
+		font-size: 37px;
+	}
 }
 
-#email-container #email .social:hover {
-	color: #2ecc71;
+@media only screen and (max-width: 1040px) {
+	body {
+		background-color: red;
+	}
+
+	#contact-green-container {
+		padding-bottom: 20px;
+	}
+
+	#contact-green-container #contact-green-container-header {
+		font-size: 40px;
+	}
+
+	#contact-green-container #contact-green-container-description {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 845px) {
+	body {
+		background-color: yellow;
+		width: 100%;
+	}
+
+	#contact-green-container {
+		padding-bottom: 20px;
+	}
+
+	#contact-green-container #contact-green-container-header {
+		font-size: 38px;
+	}
+
+	#contact-green-container #contact-green-container-description {
+		font-size: 34px;
+	}
+
+	#email-container #email {
+		font-size: 34px;
+	}
+}
+
+@media only screen and (max-width: 816px) {
+	body {
+		background-color: grey;
+		width: 100%;
+	}
+
+	header {
+		padding-bottom: 5px;
+	}
+
+	header::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	header h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	header nav {
+		margin: none;
+		padding: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	header nav ul li {
+		display: inline-block;
+		padding-top: 23px;
+		margin-left: 40px;
+		margin-right: 40px;
+		position: relative;
+		text-align: center;
+	}
+
+	header nav ul li a::before {
+		content: '';
+		display: block;
+		height: 5px;
+		background-color: #2ecc71;
+		top: 0;
+		position: absolute;
+		width: 0%;
+		transition: all ease-in-out 250ms;
+	}
+
+	header nav ul li a:hover::before {
+		width: 100%;
+	}
+
+	#contact-green-container {
+		margin-top: 30px;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		height: 350px;
+	}
+
+	#contact-green-container #contact-green-container-header {
+		font-size: 32px;
+	}
+
+	#contact-green-container #contact-green-container-description {
+		font-size: 28px;
+	}
+
+	#email-container #email{
+		font-size: 28px;
+	}
 }

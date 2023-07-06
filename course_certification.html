@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aman Devrath - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Aman Devrath</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="course_certification.html">Course & Certifications</a></li>
+							<li><a href="resume/Aman_Devrath_Exp-4 Years.pdf" target="_blank">Resume</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<div class="about-me-main">
+								<header style="text-align: center;">
+									<h1>Course & Certifications</h1>
+								</header>
+								<hr>
+							</div>
+						</div>
+					</div>
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+						  <div class="numbertext">1 / 9</div>
+						  <img src="images/course_documents/Python/UC-5WW26MX0_Python_Zero_to_Hero.jpg" style="width:100%">
+						  <div class="text">Python Course - Udemy</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">2 / 9</div>
+						  <img src="images/course_documents/SQL/UC-7d5cc1bf-3623-4446-8a80-3df2911ae03c.jpg" style="width:100%">
+						  <div class="text">SQL Course - Udemy</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">3 / 9</div>
+						  <img src="images/course_documents/Google Data Analytics/Coursera 7W86J6CW3XEV.jpg" style="width:100%">
+						  <div class="text">Google Data Analytics Professional Certificate - Coursera (1/8)</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">4 / 9</div>
+						  <img src="images/course_documents/Google Data Analytics/Coursera UA5GPTPE7BPM.jpg" style="width:100%">
+						  <div class="text">Google Data Analytics Professional Certificate - Coursera (2/8)</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">5 / 9</div>
+						  <img src="images/course_documents/Google Data Analytics/Coursera CS83PSXP2KZT.jpg" style="width:100%">
+						  <div class="text">Google Data Analytics Professional Certificate - Coursera (3/8)</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">6 / 9</div>
+						  <img src="images/course_documents/Data Visualization with Tableau/Coursera XE6WL6XHT7LS.jpg" style="width:100%">
+						  <div class="text">Data Visualization with Tableau - Coursera (1/5)</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">7 / 9</div>
+						  <img src="images/course_documents/Data Visualization with Tableau/Coursera SGW8PXD2FZ8C.jpg	" style="width:100%">
+						  <div class="text">Data Visualization with Tableau - Coursera (2/5)</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">8 / 9</div>
+						  <img src="images/course_documents/Data Visualization with Tableau/Coursera L4NXDDPM53QD.jpg" style="width:100%">
+						  <div class="text">Data Visualization with Tableau - Coursera (3/5)</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">9 / 9</div>
+						  <img src="images/course_documents/OutSystems/Aman Devrath OutSystems Certificate.jpg" style="width:100%">
+						  <div class="text">Associate Reactive Developer - OutSystems 11</div>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+
+					</div>
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					  <span class="dot" onclick="currentSlide(6)"></span> 
+					  <span class="dot" onclick="currentSlide(7)"></span> 
+					  <span class="dot" onclick="currentSlide(8)"></span> 
+					  <span class="dot" onclick="currentSlide(9)"></span> 
+					</div>
+
+					<script>
+						let slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+						  let i;
+						  let slides = document.getElementsByClassName("mySlides");
+						  let dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+						    slides[i].style.display = "none";  
+						  }
+						  for (i = 0; i < dots.length; i++) {
+						    dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " active";
+						}
+					</script>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Connect with me</h2>
+								<ul class="icons">
+									<li>
+										<a href="https://www.linkedin.com/in/aman-devrath/" target="_blank" class="icon brands style2 fa-linkedin">
+											<span class="label">LinkedIn</span>
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/aman-devrath/portfolio" target="_blank" class="icon brands style2 fa-github">
+											<span class="label">GitHub</span>
+										</a>
+									</li>
+									<li><a href="mailto:amndev94@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li>
+										<a href="resume/DA_Aman_Devrath_Resume.pdf" target="_blank" class="icon solid style2 fa-file-invoice" >
+											<span class="label">Resume</span>
+										</a>
+									</li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Aman Devrath | Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

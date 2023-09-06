@@ -2964,9 +2964,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#header {
+			/*#header {
 				padding: 4em 0 0.1em 0 ;
-			}
+			}*/
 
 				#header nav {
 					right: 0.5em;
@@ -3406,21 +3406,21 @@ input, select, textarea {
     color: #000;
 }
 
-.area-of-interest-skills > .col-md-4 > .interest-header,
-.portfolio-section-links > .col-md-3 > .portfolio-header {
+.area-of-interest-skills > .col-md-3 > .interest-header,
+.portfolio-section-links > .col-md-5 > .portfolio-header {
 	font-size: 1.2em;
 	font-weight: 600;
 	color: #015b63;
 }
 
-.area-of-interest-skills > .col-md-4 > .interest-description,
-.portfolio-section-links > .col-md-3 > .portfolio-description{
+.area-of-interest-skills > .col-md-3 > .interest-description,
+.portfolio-section-links > .col-md-5 > .portfolio-description{
 	margin: 0.75em 0 0 0;
 	font-size: 0.85em;
 	font-weight: 400;
 }
 
-.area-of-interest-skills > .col-md-4,
+.area-of-interest-skills > .col-md-3,
 .experience-section-links > .col-md-4 {
         display: flex;
 		flex-direction: column;
@@ -3432,13 +3432,13 @@ input, select, textarea {
         width: 30%;
       }
 
-.portfolio-section-links > .col-md-3 {
+.portfolio-section-links > .col-md-5 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
     padding: 2em;
     margin: 0.75em;
-    width: 22%;
+    width: 45%;
 }
 
 .experience-education-container > .col-md-10 {
@@ -3449,17 +3449,17 @@ input, select, textarea {
     margin: 0 auto;
 }
 
-.portfolio-section-links > .col-md-3 {
+.portfolio-section-links > .col-md-5 {
         border: solid 4px #015b63;
     }
 
-.area-of-interest-skills > .col-md-4 > .icon,
+.area-of-interest-skills > .col-md-3 > .icon,
 .experience-section-links > .col-md-6 > .icon {
 	width: 1.5em;
 	padding: 0 0 0.5em 0;
 }
 
-.area-of-interest-skills > .col-md-4 > .icon > img,
+.area-of-interest-skills > .col-md-3 > .icon > img,
 .experience-section-links > .col-md-6 > .icon > img {
 	filter: invert(27%) sepia(16%) saturate(4420%) hue-rotate(149deg) brightness(93%) contrast(99%);
 
@@ -3642,4 +3642,65 @@ img {vertical-align: middle;}
 /* certificates */
 .certificates-div {
 	margin: -3em 0 3em 0;
+}
+
+/* individual project screen */
+.individual-projects > .col-md-12 > img {
+	width: 100%;
+}
+
+/* Areas of interest blocks */
+@media only screen and (max-width: 864px) {
+	.area-of-interest-skills > .col-md-3 {
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+        border: 1px solid;
+        padding: 2em;
+        margin: 0.75em;
+        border-radius: 10px;
+        width: 45%;
+      }
+}
+
+
+@media only screen and (max-width: 620px) {
+	.portfolio-section-links > .col-md-5 {
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    padding: 2em;
+	    margin: 0.75em;
+	    width: 45%;
+	}
+}
+
+@media only screen and (max-width: 583px) {
+	.portfolio-section-links > .col-md-5 {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    padding: 2em;
+	    margin: 0.75em;
+	    width: 100%;
+	}
+
+	.area-of-interest-skills > .col-md-3 {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    border: 1px solid;
+	    padding: 2em;
+	    margin: 0.75em;
+	    border-radius: 10px;
+	    width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.area-of-interest,
+	.portfolio-section {
+		padding-left: 0em;
+    	padding-right: 0em;
+	}
 }
